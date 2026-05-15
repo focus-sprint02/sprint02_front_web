@@ -96,3 +96,16 @@ if (rotinaUsuario) {
         document.getElementById("prioridadesUsuario").innerHTML = `<strong>Prioridades:</strong> ${dados.prioridades.join(", ")}`;
     }
 }
+
+// EXIBIÇÃO DOS DADOS DO USUÁRIO NO DASHBOARD, recuperar as informações salvas no sessionStorage e exibir na tela
+const hero = document.querySelector(".hero");
+
+if(hero){
+
+    //array com imagens para slide
+    const imagens = [
+        "img/slide00.png",
+        "img/slide01.png",
+        "img/slide02.png"
+
+    ];
