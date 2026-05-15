@@ -125,3 +125,41 @@ body{
 ion-icon{
   font-size: 20px;
 }
+
+.container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100dvh;
+  padding: 30px;
+}
+
+.formulario{
+  background:var(--bg-card);
+
+  width:500px;
+
+  padding:30px;
+  border-radius:12px;
+
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+textarea,
+select{
+  padding:10px;
+  background: var(--bg-card);
+}
+
+.flex-opcoes{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.opcao{
+  display:flex;
+  gap:5px;
+}
