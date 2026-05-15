@@ -1,71 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Configuração Inteligente</title>
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-  <body>
-    <header class="topo">
-      <h1><img src="img/logo.png" alt="Focus" /></h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuração Inteligente</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
 
-      <nav>
-        <a href="index.html">Voltar</a>
-      </nav>
-    </header>
+  <header class="topo">
+    <h1><img src="img/logo.png" alt="Focus"></h1>
 
-    <main class="container">
-      <form class="formulario" id="formFocus">
-        <h1>Configure sua experiência</h1>
+    <nav>
+      <a href="index.html">Voltar</a>
+    </nav>
+  </header>
 
-        <label> Como é sua rotina de estudos? </label>
+  <main class="container">
 
-        <textarea
-          id="rotina"
-          placeholder="Ex: faculdade integral, cursinho, estágio..."
-        ></textarea>
+    <form class="formulario" id="formFocus">
 
-        <label> Deseja organizar fotos por matérias? </label>
+      <h1>Configure sua experiência</h1>
 
-        <select id="materias" title="Organizar por matérias">
-          <option>Sim</option>
-          <option>Não</option>
-        </select>
+      <label>
+        Como é sua rotina de estudos?
+      </label>
 
-        <label> Como deseja a exclusão das imagens? </label>
+      <textarea id="rotina" placeholder="Ex: faculdade integral, cursinho, estágio..."></textarea>
 
-        <select id="exclusao" title="Excluir imagens">
-          <option>IA automática</option>
-          <option>Manual</option>
-        </select>
+      <label>
+        Deseja organizar fotos por matérias?
+      </label>
 
-        <label> Defina importância dos conteúdos: </label>
+      <select id="materias" title="Organizar por matérias">
+        <option>Sim</option>
+        <option>Não</option>
+      </select>
 
-        <div class="flex-opcoes">
-          <div class="opcao">
-            <input type="checkbox" value="Provas" title="Provas" />
-            <span>Provas</span>
-          </div>
+      <label>
+        Como deseja a exclusão das imagens?
+      </label>
 
-          <div class="opcao">
-            <input type="checkbox" value="Trabalhos" title="Trabalhos" />
-            <span>Trabalhos</span>
-          </div>
+      <select id="exclusao" title="Excluir imagens">
+        <option>IA automática</option>
+        <option>Manual</option>
+      </select>
 
-          <div class="opcao">
-            <input
-              type="checkbox"
-              value="Anotações rápidas"
-              title="Anotações rápidas"
-            />
-            <span>Anotações rápidas</span>
-          </div>
+      <label>
+        Defina importância dos conteúdos:
+      </label>
+
+      <div class="flex-opcoes">
+
+        <div class="opcao">
+          <input type="checkbox" value="Provas" title="Provas">
+          <span>Provas</span>
         </div>
 
-        <button type="submit" class="botao">Finalizar</button>
-      </form>
-    </main>
-    <script src="script.js"></script>
-  </body>
+        <div class="opcao">
+          <input type="checkbox" value="Trabalhos" title="Trabalhos">
+          <span>Trabalhos</span>
+        </div>
+
+        <div class="opcao">
+          <input type="checkbox" value="Anotações rápidas" title="Anotações rápidas">
+          <span>Anotações rápidas</span>
+        </div>
+
+      </div>
+
+      <button type="submit" class="botao">
+  Finalizar
+</button>
+      
+
+    </form>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>

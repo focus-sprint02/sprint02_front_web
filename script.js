@@ -97,6 +97,7 @@ if (rotinaUsuario) {
     }
 }
 
+
 // EXIBIÇÃO DOS DADOS DO USUÁRIO NO DASHBOARD, recuperar as informações salvas no sessionStorage e exibir na tela
 const hero = document.querySelector(".hero");
 
@@ -109,3 +110,50 @@ if(hero){
         "img/slide02.png"
 
     ];
+
+    //controlador das imagens
+    let indice = 0;
+
+    const botaoProximo =
+    document.getElementById("proximo");
+
+    const botaoAnterior =
+    document.getElementById("anterior");
+
+    // evento para avançar (botão)
+    botaoProximo.addEventListener("click", () => {
+        indice++;
+
+        if(indice >= imagens.length){
+            indice = 0;
+        }
+
+        hero.style.backgroundImage = `
+            linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.4)
+            ),
+            url(${imagens[indice]})
+        `;
+
+    });
+
+    botaoAnterior.addEventListener("click", () => {
+        indice--;
+
+        if(indice < 0){
+            indice = imagens.length - 1;
+        }
+
+        hero.style.backgroundImage = `
+            linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.4)
+            ),
+            url(${imagens[indice]})
+        `;
+
+    });
+}
