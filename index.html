@@ -1,78 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Focus</title>
-  <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <h1><img src="img/logo.png" alt="Logo da Focus" /></h1>
 
-  <header class="topo">
-    <h1><img src="img/logo.png" alt="Logo da Focus"></h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#prototipo">SmartGallery</a>
+        <a href="formulario.html" class="botao_comecar">Começar</a>
+      </nav>
+    </header>
 
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#prototipo">SmartGallery</a>
-      <a href="formulario.html" class="botao_comecar">Começar</a>
-    </nav>
-  </header>
+    <section class="hero">
+      <div class="texto-hero">
+        <h2>
+          <strong>SmartGallery</strong>: sua câmera organizada para a rotina
+          universitária de estudantes full-time
+        </h2>
 
-  <section class="hero">
+        <p>
+          A IA identifica conteúdos de estudo, organiza automaticamente por
+          matérias, ajuda você a não perder datas importantes e elimina o
+          <strong>"cemitério digital"</strong>, aquelas fotos de estudo
+          esquecidas na galeria. Tudo isso para que você possa focar no que
+          realmente importa: seus estudos.
+        </p>
 
-    <div class="texto-hero">
-      <h2><strong>SmartGallery</strong>: sua câmera organizada para a rotina universitária de estudantes full-time</h2>
+        <a class="botao" href="formulario.html"> Simular experiência </a>
+      </div>
 
-      <p>
-        A IA identifica conteúdos de estudo,
-        organiza automaticamente por matérias, ajuda você a não perder datas importantes e elimina o <strong>"cemitério digital"</strong>, aquelas fotos de estudo esquecidas na galeria. Tudo isso para que você possa focar no que realmente importa: seus estudos.
-      </p>
+      <div class="card-info">
+        <article class="card">
+          <h3>IA Inteligente</h3>
+          <p>Detecta fotos de estudo e separa do dia a dia.</p>
+        </article>
 
-      <a class="botao" href="formulario.html">
-        Simular experiência
-      </a>
-    </div>
+        <article class="card">
+          <h3>Organização por matéria</h3>
+          <p>Identifica conteúdos e cria pastas automáticas.</p>
+        </article>
 
-    <div class="card-info">
+        <article class="card">
+          <h3>Lembretes</h3>
+          <p>Detecta datas importantes dentro das imagens.</p>
+        </article>
 
-      <article class="card">
-        <h3>IA Inteligente</h3>
-        <p>Detecta fotos de estudo e separa do dia a dia.</p>
-      </article>
+        <article class="card">
+          <h3>Fim do "cemitério digital"</h3>
+          <p>Remove fotos de estudo esquecidas na galeria.</p>
+        </article>
+      </div>
 
-      <article class="card">
-        <h3>Organização por matéria</h3>
-        <p>Identifica conteúdos e cria pastas automáticas.</p>
-      </article>
+      <div class="controles-slide">
+        <button id="anterior" title="anterior" type="button">
+          <ion-icon name="caret-back-outline"></ion-icon>
+        </button>
 
-      <article class="card">
-        <h3>Lembretes</h3>
-        <p>Detecta datas importantes dentro das imagens.</p>
-      </article>
+        <button id="proximo" title="proximo" type="button">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </section>
 
-      <article class="card">
-        <h3>Fim do "cemitério digital"</h3>
-        <p>Remove fotos de estudo esquecidas na galeria.</p>
-      </article>
+    <section id="sobre" class="secao_sobre">
+      <div class="texto-sobre">
+        <h2>O problema</h2>
 
-    </div>
+        <p>
+          Estudantes universitários acumulam centenas de fotos de anotações,
+          trabalhos e conteúdos importantes. Com o tempo, essas imagens ficam
+          esquecidas na galeria, criando um verdadeiro “cemitério digital”.
+        </p>
 
-     <div class="controles-slide">
+        <p>
+          A dificuldade em encontrar conteúdos importantes gera desorganização,
+          ansiedade e perda de produtividade acadêmica.
+        </p>
+      </div>
 
-    <button id="anterior" title="anterior" type="button">
-      <ion-icon name="caret-back-outline"></ion-icon>
-    </button>
+      <div class="imagem-sobre">
+        <img src="img/galeria_desorganizada.png" alt="Galeria desorganizada" />
+      </div>
+    </section>
+    <section id="prototipo" class="secao_prototipo">
+      <div class="texto-prototipo">
+        <h2>Uma experiência inteligente para estudantes full-time</h2>
 
-    <button id="proximo" title="proximo" type="button">
-      <ion-icon name="caret-forward-outline"></ion-icon>
-    </button>
+        <p>
+          A solução identifica conteúdos importantes, separa imagens por
+          matérias, detecta datas relevantes e reduz o acúmulo de fotos
+          esquecidas na galeria, ajudando estudantes a manterem o foco no
+          aprendizado.
+        </p>
 
-  </div>
+        <a
+          href="https://www.figma.com/proto/QysVn6X7CewfS9cTRCQ6dX/Prot%C3%B3tipo-Sprint-de-Frontend?node-id=0-1&t=Adr8qTq7WZIqrojh-1"
+          target="_blank"
+          rel="noopener"
+          class="botao"
+        >
+          Explorar protótipo
+        </a>
+      </div>
 
-  </section>
+      <div class="celular">
+        <a
+          href="https://www.figma.com/proto/QysVn6X7CewfS9cTRCQ6dX/Prot%C3%B3tipo-Sprint-de-Frontend?node-id=0-1&t=Adr8qTq7WZIqrojh-1"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="./img/prototipo_focus.png" alt="Protótipo SmartGallery" />
+        </a>
+      </div>
+    </section>
 
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

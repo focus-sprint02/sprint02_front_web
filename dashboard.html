@@ -1,91 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Painel do Usuário</title>
-  <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel do Usuário</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <h1><img src="img/logo.png" alt="Focus" /></h1>
 
-  <header class="topo">
-    <h1><img src="img/logo.png" alt="Focus"></h1>
+      <nav>
+        <a href="index.html">Voltar</a>
+      </nav>
+    </header>
 
-    <nav>
-      <a href="index.html">Voltar</a>
-    </nav>
-  </header>
+    <main class="dashboard">
+      <div class="main-info">
+        <div class="materias">
+          <article class="card">
+            <h2>Matemática</h2>
 
-  <main class="dashboard">
+            <p>12 imagens organizadas</p>
 
-    <div class="main-info">
+            <p>Próxima prova: 15/05</p>
 
-      <div class="materias">
-        <article class="card">
-        <h2>Matemática</h2>
+            <button type="button">Abrir pasta</button>
+          </article>
 
-        <p>12 imagens organizadas</p>
+          <article class="card">
+            <h2>Biologia</h2>
 
-        <p>Próxima prova: 15/05</p>
+            <p>8 imagens organizadas</p>
 
-        <button type="button">Abrir pasta</button>
-      </article>
+            <p>IA encontrou conteúdo importante</p>
 
-      <article class="card">
-        <h2>Biologia</h2>
+            <button type="button">Abrir pasta</button>
+          </article>
+        </div>
 
-        <p>8 imagens organizadas</p>
+        <div class="perfil-usuario">
+          <div class="card">
+            <h2>Seu perfil</h2>
 
-        <p>IA encontrou conteúdo importante</p>
+            <p id="rotinaUsuario"></p>
 
-        <button type="button">Abrir pasta</button>
-      </article>
+            <p id="organizacaoUsuario"></p>
+
+            <p id="exclusaoUsuario"></p>
+
+            <p id="prioridadesUsuario"></p>
+          </div>
+        </div>
       </div>
-      
-      <div class="perfil-usuario">
 
-  <div class="card">
-    <h2>Seu perfil</h2>
+      <div class="alertas">
+        <article class="card-alerta">
+          <h3>IA detectou duplicatas</h3>
 
-    <p id="rotinaUsuario"></p>
+          <p>6 imagens podem ser removidas automaticamente.</p>
+          <button type="button">Revisar imagens</button>
+        </article>
 
-    <p id="organizacaoUsuario"></p>
+        <article class="card-alerta">
+          <h3>Data importante encontrada</h3>
 
-    <p id="exclusaoUsuario"></p>
-
-    <p id="prioridadesUsuario"></p>
-
-  </div>
-
-</div>
-
-    </div>
-
-    <div class="alertas">
-
-      <article class="card-alerta">
-        <h3>IA detectou duplicatas</h3>
-
-        <p>
-          6 imagens podem ser removidas automaticamente.
-        </p>
-        <button type="button">Revisar imagens</button>
-      </article>
-
-      <article class="card-alerta">
-        <h3>Data importante encontrada</h3>
-
-        <p>
-          “Entrega do trabalho - sexta-feira”
-        </p>
-        <button type="button">Ver detalhes</button>
-      </article>
-
-    </div>
-
-    
-
-  </main>
-
-</body>
+          <p>“Entrega do trabalho - sexta-feira”</p>
+          <button type="button">Ver detalhes</button>
+        </article>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

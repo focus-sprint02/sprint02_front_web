@@ -1,82 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Configuração Inteligente</title>
-  <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuração Inteligente</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <h1><img src="img/logo.png" alt="Focus" /></h1>
 
-  <header class="topo">
-    <h1><img src="img/logo.png" alt="Focus"></h1>
+      <nav>
+        <a href="index.html">Voltar</a>
+      </nav>
+    </header>
 
-    <nav>
-      <a href="index.html">Voltar</a>
-    </nav>
-  </header>
+    <main class="container">
+      <form class="formulario" id="formFocus">
+        <h1>Configure sua experiência</h1>
 
-  <main class="container">
+        <label> Como é sua rotina de estudos? </label>
 
-    <form class="formulario" id="formFocus">
+        <textarea
+          id="rotina"
+          placeholder="Ex: faculdade integral, cursinho, estágio..."
+        ></textarea>
 
-      <h1>Configure sua experiência</h1>
+        <label> Deseja organizar fotos por matérias? </label>
 
-      <label>
-        Como é sua rotina de estudos?
-      </label>
+        <select id="materias" title="Organizar por matérias">
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
 
-      <textarea id="rotina" placeholder="Ex: faculdade integral, cursinho, estágio..."></textarea>
+        <label> Como deseja a exclusão das imagens? </label>
 
-      <label>
-        Deseja organizar fotos por matérias?
-      </label>
+        <select id="exclusao" title="Excluir imagens">
+          <option>IA automática</option>
+          <option>Manual</option>
+        </select>
 
-      <select id="materias" title="Organizar por matérias">
-        <option>Sim</option>
-        <option>Não</option>
-      </select>
+        <label> Defina importância dos conteúdos: </label>
 
-      <label>
-        Como deseja a exclusão das imagens?
-      </label>
+        <div class="flex-opcoes">
+          <div class="opcao">
+            <input type="checkbox" value="Provas" title="Provas" />
+            <span>Provas</span>
+          </div>
 
-      <select id="exclusao" title="Excluir imagens">
-        <option>IA automática</option>
-        <option>Manual</option>
-      </select>
+          <div class="opcao">
+            <input type="checkbox" value="Trabalhos" title="Trabalhos" />
+            <span>Trabalhos</span>
+          </div>
 
-      <label>
-        Defina importância dos conteúdos:
-      </label>
-
-      <div class="flex-opcoes">
-
-        <div class="opcao">
-          <input type="checkbox" value="Provas" title="Provas">
-          <span>Provas</span>
+          <div class="opcao">
+            <input
+              type="checkbox"
+              value="Anotações rápidas"
+              title="Anotações rápidas"
+            />
+            <span>Anotações rápidas</span>
+          </div>
         </div>
 
-        <div class="opcao">
-          <input type="checkbox" value="Trabalhos" title="Trabalhos">
-          <span>Trabalhos</span>
-        </div>
-
-        <div class="opcao">
-          <input type="checkbox" value="Anotações rápidas" title="Anotações rápidas">
-          <span>Anotações rápidas</span>
-        </div>
-
-      </div>
-
-      <button type="submit" class="botao">
-  Finalizar
-</button>
-      
-
-    </form>
-
-  </main>
-
-</body>
+        <button type="submit" class="botao">Finalizar</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
