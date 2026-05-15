@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --main-color: #01195d;
+    --secondary-color: #023095;
+    --tertiary-color: #0453e0;
+    --bg-dark-black_gray: #2c2c2c;
+    --bg-card: #ebebeb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background:var(--bg-dark-black_gray);
+}
+
+.topo{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+
+  padding: 25px 50px;
+  background:var(--main-color);
+  color:white;
+}
+
+.topo a{
+  color:white;
+  text-decoration:none;
+  padding:10px;
+}
+.botao_comecar{
+  background:var(--secondary-color);
+  color:white;
+  padding:12px;
+  text-decoration:none;
+  border-radius:8px;
+}
+.topo img{
+    width: 80px;
+
+}
+
+.hero{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+  padding:40px;
+  gap:30px;
+  min-height:100dvh;    
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(/img/slide00.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* esticar a imagem até ocupar toda a imagem*/
+  background-position: center;
+  background-position: 50%;
+  background-attachment: fixed;
+}
+
+.texto-hero{
+  width:400px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  color: white;
+}
+
+.card-info{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.card{
+  background: var(--bg-card);
+  padding:20px;
+  border-radius:10px;
+  width:250px;
+
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.botao{
+  background:var(--tertiary-color);
+  color:white;
+  padding:12px;
+  text-decoration:none;
+  border-radius:8px;
+  text-align:center;
+  border:none;
+}
+ section {
+  height: 100dvh;
+} 
+.controles-slide{
+  display:flex;
+  gap:15px;
+}
+
+.controles-slide button{
+  padding:10px 16px;
+  border:none;
+  border-radius:8px;
+  background:var(--tertiary-color);
+  color:white;
+  cursor: pointer;
+}
+ion-icon{
+  font-size: 20px;
+}
